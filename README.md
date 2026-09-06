@@ -2,11 +2,10 @@
 
 **Multi-scale Edge-supervised Semantic Fusion Network**，多尺度边缘监督语义融合网络。
 
-边缘分支通过辅助监督参与训练，默认配置不把边缘预测直接融合到分割头。名称对照见 `RENAMING.md`。
+边缘分支通过辅助监督参与训练，默认配置不把边缘预测直接融合到分割头。
 
 面向 1024×1024 RGB 遥感影像的水体二值分割模型，使用 ConvNeXt-Base 编码器、GatedDetailEnhancement、多尺度语义融合、SK 解码器，以及边缘和形态辅助监督。
 
-这是一份从实验工程整理的独立源码副本。默认配置为三处 GroupNorm 版本：替换 `decoder_stage4.norm`、`decoder_stage3.norm` 和 `segmentation_fusion.1`，保留 ConvNeXt 的 LayerNorm。**该版本仍包含 SK，不是 no-SK。** 模型实现同时保留其他实验变体，训练和推理必须使用与权重一致的配置。
 
 ## 目录
 
