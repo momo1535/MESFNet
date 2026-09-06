@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "project_name": "MESFNet",
+  "full_name": "Multi-scale Edge-supervised Semantic Fusion Network",
+  "created_date": "2026-09-06",
+  "naming_only": true,
+  "computational_changes": false,
+  "excluded": [
+    "dataset",
+    "checkpoints",
+    "credentials",
+    "logs",
+    "historical runs"
+  ],
+  "compatibility": {
+    "legacy_raw_state_dict": "Convert with tools/migrate_legacy_checkpoint.py.",
+    "full_resume_state": "Use the legacy engine for exact continuation.",
+    "preserved": [
+      "ablation option strings",
+      "output keys mask/edge/morph",
+      "train.json fields",
+      "infer.json fields"
+    ]
+  },
+  "files": [
+    {
+      "source": "model/model_scpv2.py",
+      "release": "model/mesfnet.py",
+      "source_sha256": "d14592d1779d0312bdc2f36ddec63994111cbda0db2b159ecda5101b8148f084",
+      "release_sha256": "67730188e9aabe7677bb0c9569d42d96d19c2fd52c87ed8f088381a03f6d45e8"
+    },
+    {
+      "source": "model/train.py",
+      "release": "model/train.py",
+      "source_sha256": "ac0bd9fd55ce1aec87e1571a819fa06c9b86a6ad74ce8eae2fa1d08a9b7f1cc4",
+      "release_sha256": "352c7fd26e4193be5108835e34d48fa1eedba8c9fe4f596ac8fa68865910dada"
+    },
+    {
+      "source": "model/dataset_load.py",
+      "release": "model/dataset_load.py",
+      "source_sha256": "93dbb19f04d2c1f49c884ef70d6d53e6197c075fd23c9becede66b26e5ce5c06",
+      "release_sha256": "93dbb19f04d2c1f49c884ef70d6d53e6197c075fd23c9becede66b26e5ce5c06"
+    },
+    {
+      "source": "model/losses4.py",
+      "release": "model/losses4.py",
+      "source_sha256": "9d74eb84d03d5e707d7837271924f399eb8355e37aaeec82a014e941de1e8630",
+      "release_sha256": "c55c6a0ac5848c9768bb09fb36500287c2c00bca3412d06fcdba7dc21c088d78"
+    },
+    {
+      "source": "model/postprocess.py",
+      "release": "model/postprocess.py",
+      "source_sha256": "8809d20d03da5e3b01fc13f58d7546ad8f93be857a0ec1c58ab0ebf8916fe96a",
+      "release_sha256": "8809d20d03da5e3b01fc13f58d7546ad8f93be857a0ec1c58ab0ebf8916fe96a"
+    },
+    {
+      "source": "model/build_hard_case_manifest.py",
+      "release": "model/build_hard_case_manifest.py",
+      "source_sha256": "cfc69c60639479d02683de9170135cf30269b65402e09b69a0e1c4b79a95ac6f",
+      "release_sha256": "cfc69c60639479d02683de9170135cf30269b65402e09b69a0e1c4b79a95ac6f"
+    },
+    {
+      "source": "model/prepare_ablation_split.py",
+      "release": "model/prepare_ablation_split.py",
+      "source_sha256": "88b386468db5c452525b29bbf50b0e6f8257dd9a41cb8cc00c9b29164adc26e0",
+      "release_sha256": "88b386468db5c452525b29bbf50b0e6f8257dd9a41cb8cc00c9b29164adc26e0"
+    },
+    {
+      "source": "model/gdalTools.py",
+      "release": "model/gdalTools.py",
+      "source_sha256": "e11938e884a6f5e632e7e6f178ed2e4001a3b085ded25d5c208c7d779d6b5ca2",
+      "release_sha256": "7bb322c67265fb088318385ca3e8bc0fc741401ef6967afa7703f25adbb853e8"
+    },
+    {
+      "source": "tools/interpolate_checkpoints.py",
+      "release": "tools/interpolate_checkpoints.py",
+      "source_sha256": "c8766683db44ce2b0d33e65554df71ce943cc2d5d83f414b5278ad52987ea9fd",
+      "release_sha256": "c8766683db44ce2b0d33e65554df71ce943cc2d5d83f414b5278ad52987ea9fd"
+    },
+    {
+      "source": "configs/train.json",
+      "release": "configs/train.json",
+      "source_sha256": "ce50e33d8cac0a6d7fa7355df3870c0deb141acbee0be516eda6e4fe7f0e1109",
+      "release_sha256": "ce50e33d8cac0a6d7fa7355df3870c0deb141acbee0be516eda6e4fe7f0e1109"
+    },
+    {
+      "source": "configs/infer.json",
+      "release": "configs/infer.json",
+      "source_sha256": "d26ab239ae90704cf7537ac29601ab57ca8e63ef9462c1595bb4050bbbe1c1be",
+      "release_sha256": "d26ab239ae90704cf7537ac29601ab57ca8e63ef9462c1595bb4050bbbe1c1be"
+    }
+  ]
+}

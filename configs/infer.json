@@ -1,0 +1,7 @@
+{
+  "backbone": "base",
+  "ablations": ["groupnorm_decoder"],
+  "threshold": 0.5,
+  "tta": "d4",
+  "max_hole_area": 8192
+}
