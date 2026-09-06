@@ -2,7 +2,7 @@
 
 **Multi-scale Edge-supervised Semantic Fusion Network**，多尺度边缘监督语义融合网络。
 
-本次发布仅统一命名，未改变原模型的结构、计算和训练参数。边缘分支通过辅助监督参与训练，默认配置不把边缘预测直接融合到分割头。名称对照见 `RENAMING.md`。
+边缘分支通过辅助监督参与训练，默认配置不把边缘预测直接融合到分割头。名称对照见 `RENAMING.md`。
 
 面向 1024×1024 RGB 遥感影像的水体二值分割模型，使用 ConvNeXt-Base 编码器、GatedDetailEnhancement、多尺度语义融合、SK 解码器，以及边缘和形态辅助监督。
 
